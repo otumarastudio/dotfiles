@@ -1,0 +1,20 @@
+[user]
+	name = otumarastudio
+	email = heeungs@gmail.com
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[push]
+	autoSetupRemote = true
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+
+# zero2one 계정용 — ~/dev/zero2one/ 아래 repo 에서만 자동 적용
+[includeIf "gitdir:~/dev/zero2one/"]
+	path = ~/.gitconfig-zero2one
